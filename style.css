@@ -58,7 +58,7 @@
   
   .container {
     position: relative;
-    max-width: 384px;
+    width: 384px;
     max-height: 611px;
     background-color: var(--dark-gray);
     display: flex;

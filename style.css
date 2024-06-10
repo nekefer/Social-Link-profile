@@ -1,0 +1,131 @@
+:root {
+  --Black: #141414;
+  --Dark-Gray: #1f1f1f;
+  --Grey: #333333;
+  --White: #ffffff;
+  --Neon-Green: #c4f82a;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Black);
+  color: var(--White);
+  font-size: 14px;
+  font-family: "inter", "sans-serif";
+}
+
+.container {
+  position: relative;
+  min-width: 327px;
+  max-width: 384px;
+  max-height: 611px;
+  min-height: 579px;
+  background-color: var(--Dark-Gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
+
+  border-radius: 12px;
+  padding: 40px;
+}
+img {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name-location {
+  position: relative;
+  text-align: center;
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.location {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--Neon-Green);
+}
+.bio {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+.social {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+}
+.social .link {
+  width: 100%;
+  max-height: 45px;
+  padding: 16px;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--Grey);
+  border-radius: 12px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+}
+
+.social .link:hover {
+  background-color: var(--Neon-Green);
+  color: var(--Black);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
